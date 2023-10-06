@@ -824,6 +824,7 @@ p {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-logo {
       padding: 0 15px; } }
+
   @media (max-width: 767px) {
     .single-logo {
       padding: 0 15px; } }
@@ -965,6 +966,14 @@ ul.slides {
     overflow: hidden;
     list-style: none;
 }
+
+@media (max-width: 767px) {
+  ul.slides{
+    height: 450px;      
+  }
+}
+
+
 
 .slides * {
     user-select: none;
@@ -1274,68 +1283,7 @@ input:checked + .slide-container .nav label { display: block; }
           font-size: 16px; } }
 
 /*===========================
-       07.TEAM css 
-===========================*/
-.single-team {
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(167, 167, 167, 0.16);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(167, 167, 167, 0.16);
-  box-shadow: 0px 0px 30px 0px rgba(167, 167, 167, 0.16);
-  overflow: hidden;
-  border-radius: 10px; }
-  .single-team .team-image {
-    position: relative; }
-    .single-team .team-image img {
-      width: 100%; }
-    .single-team .team-image .social {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 25px; }
-      .single-team .team-image .social ul {
-        background-color: rgba(255, 255, 255, 0.23);
-        display: inline-block;
-        border-radius: 50px;
-        padding: 0 13px;
-        position: relative;
-        z-index: 5;
-        overflow: hidden; }
-        .single-team .team-image .social ul::before {
-          position: absolute;
-          content: '';
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-          top: 0;
-          left: 0;
-          background: -webkit-linear-gradient(#fe8464 0%, #fe6e9a 100%);
-          background: -o-linear-gradient(#fe8464 0%, #fe6e9a 100%);
-          background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
-          opacity: 0;
-          visibility: hidden;
-          -webkit-transition: all 0.3s ease-out 0s;
-          -moz-transition: all 0.3s ease-out 0s;
-          -ms-transition: all 0.3s ease-out 0s;
-          -o-transition: all 0.3s ease-out 0s;
-          transition: all 0.3s ease-out 0s; }
-        .single-team .team-image .social ul li {
-          display: inline-block; }
-          .single-team .team-image .social ul li a {
-            padding: 15px 13px;
-            color: #fff; }
-  .single-team .team-content {
-    padding: 30px; }
-    .single-team .team-content .holder-name a {
-      font-size: 20px;
-      font-weight: 700;
-      color: #2E2E2E; }
-    .single-team .team-content .text {
-      margin-top: 5px; }
-  .single-team:hover .team-image .social ul::before {
-    opacity: 1;
-    visibility: visible; }
-
-/*===========================
-     08.TESTIMONIAL css 
+     07.TESTIMONIAL css 
 ===========================*/
 .single-testimonial {
   background-color: #fff;
@@ -1426,122 +1374,7 @@ input:checked + .slide-container .nav label { display: block; }
 }
 
 /*===========================
-       09.BLOG  css 
-===========================*/
-.single-blog .blog-image img {
-  border-radius: 10px;
-  width: 100%; }
-
-.single-blog .blog-content {
-  padding-top: 25px; }
-  .single-blog .blog-content .meta li {
-    font-size: 16px;
-    color: #6A6972;
-    display: inline-block;
-    margin-left: 50px; }
-    .single-blog .blog-content .meta li:first-child {
-      margin-left: 0; }
-    .single-blog .blog-content .meta li a {
-      color: #6A6972; }
-  .single-blog .blog-content .text {
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #2E2E2E;
-    margin-top: 15px; }
-    @media (max-width: 767px) {
-      .single-blog .blog-content .text {
-        font-size: 20px;
-        line-height: 30px; } }
-  .single-blog .blog-content .more {
-    font-size: 16px;
-    color: #FE7E71;
-    margin-top: 30px; }
-    .single-blog .blog-content .more i {
-      margin-left: 5px; }
-
-/*===========================
-       10.SUBSCRIBE  css 
-===========================*/
-.subscribe-area {
-  padding: 40px 50px 90px;
-  -webkit-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
-  -moz-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
-  box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
-  border-radius: 10px;
-  background-color: #fff; }
-  @media (max-width: 767px) {
-    .subscribe-area {
-      padding: 10px 30px 60px; } }
-
-.subscribe-content .subscribe-title {
-  font-size: 35px;
-  font-weight: 700; }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .subscribe-content .subscribe-title {
-      font-size: 30px; } }
-  @media (max-width: 767px) {
-    .subscribe-content .subscribe-title {
-      font-size: 24px; } }
-  .subscribe-content .subscribe-title span {
-    font-weight: 400; }
-
-.subscribe-form {
-  position: relative; }
-  .subscribe-form input {
-    border: 2px solid #E1E1E1;
-    height: 65px;
-    padding: 0 30px;
-    border-radius: 5px;
-    width: 100%;
-    color: #2E2E2E; }
-    .subscribe-form input::placeholder {
-      opacity: 1;
-      color: #B9B9B9; }
-    .subscribe-form input::-moz-placeholder {
-      opacity: 1;
-      color: #B9B9B9; }
-    .subscribe-form input::-moz-placeholder {
-      opacity: 1;
-      color: #B9B9B9; }
-    .subscribe-form input::-webkit-input-placeholder {
-      opacity: 1;
-      color: #B9B9B9; }
-    .subscribe-form input:focus {
-      border-color: #361CC1; }
-  .subscribe-form button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 65px;
-    line-height: 65px;
-    background: -webkit-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-    background: -o-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-    background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-    background-size: 200%; }
-    @media (max-width: 767px) {
-      .subscribe-form button {
-        position: relative;
-        width: 100%;
-        margin-top: 10px;
-        border-radius: 5px; } }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      .subscribe-form button {
-        position: absolute;
-        width: auto;
-        margin-top: 0;
-        border-radius: 0;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px; } }
-    .subscribe-form button:hover {
-      color: #fff;
-      background-position: right center; }
-
-/*===========================
-       11.FOOTER  css 
+       08.FOOTER  css 
 ===========================*/
 .footer-area {
   background-position: top center;
